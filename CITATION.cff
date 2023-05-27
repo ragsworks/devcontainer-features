@@ -1,0 +1,30 @@
+# See: https://citation-file-format.github.io/
+
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+
+title: RagsWorks DevContainer-Features
+
+message: >-
+  If you use this software, please cite using the
+  information provided here
+
+type: software
+
+authors:
+  - given-names: Darren
+    family-names: Poulton
+    email: ragdata@ragdata.dev
+    orcid: 'https://orcid.org/0000-0001-8986-2886'
+    affiliation: Redeyed Software
+
+repository-code: 'https://github.com/ragsworks/devcontainer-features'
+
+url: 'https://ragsworks.github.io/'
+
+abstract: >-
+  DevContainer Features in the Official DevContainer Specification!
+
+license: MIT
