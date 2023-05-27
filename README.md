@@ -67,7 +67,7 @@ If you like this repo, please give it a ⭐ (it really does help)
 
 ## ⭐ [Project Overview](#-table-of-contents)
 
-> The DevContainers in this repository confirm to the <a href="https://containers.dev/" target="_blank">Official Development Containers Specification</a> (see them on <a href="https://github.com/devcontainers" target="_blank">GitHub</a>)
+> The DevContainers in this repository confirm to the <a href="https://containers.dev/" target="_blank">Official Development Containers Specification</a> (see <a href="https://github.com/devcontainers" target="_blank">GitHub</a>)
 
 
 
