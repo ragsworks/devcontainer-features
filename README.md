@@ -31,7 +31,7 @@ DevContainer Features!<br /><br />
 
 #### _Elapsed Project Time_
 
-[![wakatime](https://wakatime.com/badge/user/7e04d9d4-3a44-495e-b622-69fdbafd036c/project/d48d58e9-26bc-47c5-b1b1-0881d5e99748.svg?style=for-the-badge)](https://wakatime.com/badge/user/7e04d9d4-3a44-495e-b622-69fdbafd036c/project/d48d58e9-26bc-47c5-b1b1-0881d5e99748)
+[![wakatime](https://wakatime.com/badge/user/7e04d9d4-3a44-495e-b622-69fdbafd036c/project/2f80aa7d-4564-4f1c-bb0a-47dc8490071b.svg?style=for-the-badge)](https://wakatime.com/badge/user/7e04d9d4-3a44-495e-b622-69fdbafd036c/project/2f80aa7d-4564-4f1c-bb0a-47dc8490071b)
 
 </div>
 
