@@ -1,4 +1,4 @@
-ragworks/devcontainer-features v-1.0.0
+ragsworks/devcontainer-features v-1.0.0
 
 Copyright © 2023 Darren (Ragdata) Poulton
 
@@ -8,6 +8,27 @@ ATTRIBUTIONS
 
 This project incorporates ideas and / or code crafted by the following
 talented individuals:
+
+	- devcontainers/spec
+	  Copyright © Microsoft Corporation
+	  MIT Licensed
+
+	- devcontainers/action
+	  Copyright © 2022 Microsoft Corporation
+	  MIT Licensed
+
+	- devcontainers/ci
+	  Copyright © Microsoft Corporation
+	  MIT Licensed
+
+	- devcontainers/features
+	  Copyright © Microsoft Corporation
+	  MIT Licensed
+
+	- devcontainers/feature-starter
+	  Copyright © Microsoft Corporation
+	  MIT Licensed
+
 
 ====================================================================
          "We see much further, and reach much higher,
