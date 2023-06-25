@@ -1,0 +1,8 @@
+#!/bin/bash
+# shellcheck disable=SC2140
+
+if [ -d "/run/systemd/system" ]; then
+    exec /bin/systemctl "$@"
+else
+    printf "\n"systemd" is not running in this container due to its overhead.\nUse the "service" command to start services instead. e.g.: \n\nservice --status-all"
+fi

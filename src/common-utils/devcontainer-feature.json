@@ -1,0 +1,64 @@
+{
+    "id": "common-utils",
+    "version": "1.0.0",
+    "name": "Common Utilities",
+    "documentationURL": "https://github.com/ragsworks/devcontainer-features/tree/master/src/common-utils",
+    "description": "Installs a set of common command-line utilities, and sets up a root user",
+    "options": {
+        "installZsh": {
+            "type": "boolean",
+            "default": true,
+            "description": "Install ZSH?"
+        },
+        "configureZshAsDefaultShell": {
+            "type": "boolean",
+            "default": false,
+            "description": "Change default shell to ZSH?"
+        },
+        "installOhMyZsh": {
+            "type": "boolean",
+            "default": true,
+            "description": "Install Oh My Zsh!?"
+        },
+        "upgradePackages": {
+            "type": "boolean",
+            "default": true,
+            "description": "Upgrade OS packages?"
+        },
+        "username": {
+            "type": "string",
+            "proposals": [
+                "none",
+                "automatic",
+                "codespace",
+                "devcontainer",
+                "vscode"
+            ],
+            "default": "automatic",
+            "description": "Enter a username for your non-root user or none to skip"
+        },
+        "userUid": {
+            "type": "string",
+            "proposals": [
+                "automatic",
+                "1001"
+            ],
+            "default": "automatic",
+            "description": "Enter UID for the non-root user"
+        },
+        "userGid": {
+            "type": "string",
+            "proposals": [
+                "automatic",
+                "1001"
+            ],
+            "default": "automatic",
+            "description": "Enter GID for the non-root user"
+        },
+        "nonFreePackages": {
+            "type": "boolean",
+            "default": false,
+            "description": "Add packages from non-free Debian repository? (Debian only)"
+        }
+    }
+}
