@@ -1,0 +1,95 @@
+{
+    "id": "java",
+    "version": "1.0.0",
+    "name": "Java Feature (via SDKMAN!)",
+    "documentationURL": "https://github.com/ragsworks/devcontainer-features/tree/master/src/java",
+    "description": "Installs JAVA, SDKMAN! (if required), and required dependencies.",
+    "options": {
+        "version": {
+            "type": "string",
+            "proposals": [
+                "latest",
+                "none",
+                "17",
+                "11",
+                "8"
+            ],
+            "default": "latest",
+            "description": "Select version of Java to install"
+        },
+        "jdkDistro": {
+            "type": "string",
+            "proposals": [
+                "ms",
+                "open",
+                "oracle",
+                "tem"
+            ],
+            "default": "ms",
+            "description": "Select version of JDK distribution to install"
+        }
+    },
+    "installGradle": {
+        "type": "boolean",
+        "default": false,
+        "description": "Install Gradle - a cross-platform build automation tool"
+    },
+    "gradleVersion": {
+        "type": "string",
+        "proposals": [
+            "latest",
+            "7.5.1",
+            "6.9.3",
+            "5.6.4"
+        ],
+        "default": "latest",
+        "description": "Select version of Gradle to install"
+    },
+    "installMaven": {
+        "type": "boolean",
+        "default": false,
+        "description": "Install Maven - a management tool for Java"
+    },
+    "mavenVersion": {
+        "type": "string",
+        "proposals": [
+            "latest",
+            "3.8.6",
+            "3.6.3",
+            "3.5.4"
+        ],
+        "default": "latest",
+        "description": "Select version of Maven to install"
+    },
+    "installAnt": {
+        "type": "boolean",
+        "default": false,
+        "description": "Install Ant - a tool for automating build processes"
+    },
+    "antVersion": {
+        "type": "string",
+        "proposals": [
+            "latest",
+            "1.10.12",
+            "1.9.15"
+        ],
+        "default": "latest",
+        "description": "Select version of Ant to install"
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": ["vscjava.vscode-java-pack"],
+            "settings": {
+                "java.import.gradle.java.home": "/usr/local/sdkman/candidates/java/current"
+            }
+        }
+    },
+    "containerEnv": {
+        "SDKMAN_DIR": "/usr/local/sdkman",
+        "JAVA_HOME": "/usr/local/sdkman/candidates/java/current",
+        "PATH": "/usr/local/sdkman/bin:/usr/local/sdkman/candidates/java/current/bin:/usr/local/sdkman/candidates/gradle/current/bin:/usr/local/sdkman/candidates/maven/current/bin:/usr/local/sdkman/candidates/ant/current/bin:${PATH}"
+    },
+    "installsAfter": [
+        "ghcr.io/ragsworks/devcontainer-features/common-utils"
+    ]
+}
