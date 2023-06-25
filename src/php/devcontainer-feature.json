@@ -1,0 +1,43 @@
+{
+    "id": "php",
+    "version": "1.0.0",
+    "name": "PHP Feature",
+    "documentationURL": "https://github.com/ragsworks/devcontainer-features/tree/master/src/php",
+    "description": "Installs PHP, composer and any required dependencies.",
+    "options": {
+        "version": {
+            "type": "string",
+            "proposals": [
+                "latest",
+                "8",
+                "8.2",
+                "8.2.0",
+                "none"
+            ],
+            "default": "latest",
+            "description": "Select version of PHP to install"
+        },
+        "installComposer": {
+            "type": "boolean",
+            "default": true,
+            "description": "Install PHP Composer?"
+        }
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "xdebug.php-debug",
+                "bmewburn.vscode-intelephense-client",
+                "xdebug.php-pack",
+                "devsense.phptools-vscode"
+            ]
+        }
+    },
+    "containerEnv": {
+        "PHP_PATH": "/usr/local/php/current",
+        "PATH": "/usr/local/php/current/bin:${PATH}"
+    },
+    "installsAfter": [
+        "ghcr.io/ragsworks/devcontainer-features/common-utils"
+    ]
+}
