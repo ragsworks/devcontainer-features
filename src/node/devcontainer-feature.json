@@ -1,0 +1,53 @@
+{
+    "id": "node",
+    "version": "1.0.0",
+    "name": "Node.js (via nvm) Feature, with yarn and pnpm",
+    "documentationURL": "https://github.com/ragsworks/devcontainer-features/tree/master/src/node",
+    "description": "Installs Node.js, nvm, yarn, pnpm, and any required dependencies.",
+    "options": {
+        "version": {
+            "type": "string",
+            "proposals": [
+                "lts",
+                "latest",
+                "none",
+                "18",
+                "16",
+                "14"
+            ],
+            "default": "lts",
+            "description": "Select version of Node.js to install"
+        }
+    },
+    "nodeGypDependencies": {
+        "type": "boolean",
+        "default": true,
+        "description": "Install dependencies to compile native node modules (node-gyp)?"
+    },
+    "nvmInstallPath": {
+        "type": "string",
+        "default": "/usr/local/share/nvm",
+        "description": "The path where NVM will be installed"
+    },
+    "nvmVersion": {
+        "type": "string",
+        "default": "0.39.2",
+        "description": "The version of NVM to be installed"
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": ["dbaeumer.vscode-eslint"],
+            "settings": {
+                "java.import.gradle.java.home": "/usr/local/sdkman/candidates/java/current"
+            }
+        }
+    },
+    "containerEnv": {
+        "NVM_DIR": "/usr/local/share/nvm",
+        "NVM_SYMLINK_CURRENT": "true",
+        "PATH": "/usr/local/share/nvm/current/bin:${PATH}"
+    },
+    "installsAfter": [
+        "ghcr.io/ragsworks/devcontainer-features/common-utils"
+    ]
+}
