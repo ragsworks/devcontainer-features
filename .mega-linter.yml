@@ -1,0 +1,110 @@
+# ==================================================================
+# .mega-linter.yml
+# ==================================================================
+# MegaLinter Config File
+# See all available variables at https://megalinter.io/configuration/ and in linters documentation
+# ==================================================================
+# COMMON CONFIGURATION VARIABLES
+# ==================================================================
+APPLY_FIXES: all
+CLEAR_REPORT_FOLDER: true
+# Uncomment the line below if you are running the linter locally
+# DEFAULT_WORKSPACE: /tmp/lint
+# Uncomment below to flag to have the linter complete with exit code 0 even if errors were detected
+# DISABLE_ERRORS: true
+LINTER_RULES_PATH: .github/linters
+MARKDOWN_DEFAULT_STYLE: markdownlint
+PARALLEL: true
+VALIDATE_ALL_CODEBASE: true
+# ==================================================================
+# ACTIVE LINTER CONFIGURATION
+# ==================================================================
+ENABLE_LINTERS:
+    # LANGUAGES
+    - BASH_EXEC
+    - BASH_SHELLCHECK
+    # FORMATS
+    - JSON_JSONLINT
+    - JSON_V8R
+    - JSON_PRETTIER
+    - MARKDOWN_MARKDOWNLINT
+    - MARKDOWN_MARKDOWN_LINK_CHECK
+    - MARKDOWN_MARKDOWN_TABLE_FORMATTER
+    - YAML_PRETTIER
+    - YAML_YAMLLINT
+    - YAML_V8R
+    # TOOLING FORMATS
+    - ACTION_ACTIONLINT
+    - DOCKERFILE_HADOLINT
+    - EDITORCONFIG_EDITORCONFIG_CHECKER
+    # OTHER
+    - REPOSITORY_CHECKOV
+    - REPOSITORY_DEVSKIM
+    - REPOSITORY_DUSTILOCK
+    - REPOSITORY_GIT_DIFF
+    - REPOSITORY_GITLEAKS
+    - REPOSITORY_SECRETLINT
+    - REPOSITORY_SEMGREP
+    - REPOSITORY_SYFT
+    # - REPOSITORY_TRIVY
+    - SPELL_CSPELL
+    - SPELL_VALE
+# ==================================================================
+# INCLUSIONS / EXCLUSIONS
+# ==================================================================
+FILTER_REGEX_EXCLUDE: '(\.github/bots)'
+# ==================================================================
+# MISCELLANEOUS OPTIONS
+# ==================================================================
+SHOW_ELAPSED_TIME: true
+FLAVOR_SUGGESTIONS: true
+# ==================================================================
+# REPORTING CONFIGURATION
+# ==================================================================
+EMAIL_REPORTER: false
+FILEIO_REPORTER: true
+GITHUB_STATUS_REPORTER: true
+JSON_REPORTER: true
+TEXT_REPORTER: true
+TEXT_REPORTER_SUB_FOLDER: logs
+# ==================================================================
+# OPTIONAL - RECOMMENDED PLUGINS
+# ==================================================================
+# 1. LinkCheck - Markdown link verifier
+# 2. MegaLinter Salt Plugin - checks Salt State Files (SLS) for best practices
+# ==================================================================
+PLUGINS:
+    - https://raw.githubusercontent.com/shiranr/linkcheck/main/mega-linter-plugin-linkcheck/linkcheck.megalinter-descriptor.yml
+#     - https://raw.githubusercontent.com/ssc-services/mega-linter-plugin-salt/main/mega-linter-plugin-salt/salt.megalinter-descriptor.yml
+# ==================================================================
+# OPTIONAL - PRE & POST COMMANDS
+# ==================================================================
+# Examples of the required syntax for PRE & POST COMMANDS
+# ==================================================================
+# PRE_COMMANDS:
+#     - command: echo "This is MegaLinter PRE_COMMAND on your own MegaLinter ! :)"
+#       cwd: "root"
+# POST_COMMANDS:
+#     - command: echo "This is MegaLinter POST_COMMAND on your own MegaLinter ! :)"
+#       cwd: "workspace"
+# ==================================================================
+# OPTIONAL - INLINE LINTER CONFIGURATION
+# ==================================================================
+# The alternative to configuring linters inline are the linter
+# configuration files located in .github/linters/**
+# However, these are not available for every linter, and so we use
+# inline configuration in these instances
+# ==================================================================
+# BASH_EXEC
+# ==================================================================
+# MegaLinter BASH_EXEC page: https://megalinter.io/latest/descriptors/bash_bash_exec/
+# ==================================================================
+BASH_EXEC_FILE_EXTENSIONS: [".sh",".bash"]
+BASH_EXEC_FILE_NAMES_REGEX: ["Dockerfile(-.+)?"]
+BASH_EXEC_DISABLE_ERRORS_IF_LESS_THAN: 3
+# ==================================================================
+# BASH_SHELLCHECK
+# ==================================================================
+# How to ignore errors: https://www.shellcheck.net/wiki/Ignore
+# Enumerated ShellCheck Codes: https://gist.github.com/nicerobot/53cee11ee0abbdc997661e65b348f375
+# ==================================================================
