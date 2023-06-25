@@ -1,0 +1,83 @@
+{
+    "id": "python",
+    "version": "1.0.0",
+    "name": "PYTHON Feature",
+    "documentationURL": "https://github.com/ragsworks/devcontainer-features/tree/master/src/python",
+    "description": "Installs PYTHON, PIPX and any required dependencies.",
+    "options": {
+        "version": {
+            "type": "string",
+            "proposals": [
+                "latest",
+                "os-provided",
+                "none",
+                "3.11",
+                "3.10",
+                "3.9",
+                "3.8",
+                "3.7",
+                "3.6"
+            ],
+            "default": "os-provided",
+            "description": "Select version of PYTHON to install"
+        },
+        "installTools": {
+            "type": "boolean",
+            "default": true,
+            "description": "Install common PYTHON tools like pylint"
+        },
+        "optimize": {
+            "type": "boolean",
+            "default": false,
+            "description": "Optimize PYTHON for performance when compiled (slow)"
+        },
+        "installPath": {
+            "type": "string",
+            "default": "/usr/local/python",
+            "description": "The path where PYTHON will be installed"
+        },
+        "installJupyterlab": {
+            "type": "boolean",
+            "default": false,
+            "description": "Install JupyterLab - an interactive, web-based development environment for notebooks"
+        },
+        "configureJupyterlabAllowOrigin": {
+            "type": "string",
+            "default": "",
+            "description": "Configure JupyterLab to accept HTTP requests from the specified origin"
+        },
+        "httpProxy": {
+            "type": "string",
+            "default": "",
+            "description": "Connect to GPG Keyservers using a proxy for fetching source code signatures by configuring this option"
+        }
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-python.python",
+                "ms-python.vscode-pylance"
+            ],
+            "settings": {
+                "python.defaultInterpreterPath": "/usr/local/python/current/bin/python",
+                "python.formatting.autopep8Path": "/usr/local/py-utils/bin/autopep8",
+                "python.formatting.blackPath": "/usr/local/py-utils/bin/black",
+                "python.linting.flake8Path": "/usr/local/py-utils/bin/flake8",
+                "python.linting.flake8Enabled": false,
+                "python.linting.mypyPath": "/usr/local/py-utils/bin/mypy",
+                "python.linting.mypyEnabled": false,
+                "python.linting.pylintPath": "/usr/local/py-utils/bin/pylint",
+                "python.linting.pylintEnabled": false
+            }
+        }
+    },
+    "containerEnv": {
+        "PYTHON_PATH": "/usr/local/python/current",
+        "PIPX_HOME": "/usr/local/py-utils",
+        "PIPX_BIN_DIR": "/usr/local/py-utils/bin",
+        "PATH": "/usr/local/python/current/bin:/usr/local/py-utils/bin:${PATH}"
+    },
+    "installsAfter": [
+        "ghcr.io/ragsworks/devcontainer-features/common-utils"
+    ]
+}
