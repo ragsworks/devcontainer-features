@@ -1,0 +1,27 @@
+{
+    "id": "git-lfs",
+    "version": "1.0.0",
+    "name": "Git Large File Support (LFS) Feature",
+    "documentationURL": "https://github.com/ragsworks/devcontainer-features/tree/master/src/git-lfs",
+    "description": "Installs Git Large File Support (Git-LFS) and required dependencies.",
+    "options": {
+        "version": {
+            "type": "string",
+            "proposals": [
+                "latest",
+                "none"
+            ],
+            "default": "latest",
+            "description": "Select version of Git-LFS to install"
+        },
+        "autoPull": {
+            "type": "boolean",
+            "default": true,
+            "description": "Automatically pull LFS files when creating the container.  When false, running `git lfs pull` will do the same thing."
+        }
+    },
+    "postCreateCommand": "/usr/local/share/pull-git-lfs-artifacts.sh",
+    "installsAfter": [
+        "ghcr.io/ragsworks/devcontainer-features/common-utils"
+    ]
+}
