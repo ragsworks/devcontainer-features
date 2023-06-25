@@ -17,3 +17,14 @@ Requires the following tools / utilities:
 
 - `bash`
 - `apt`
+
+## ©️ [Copyright & Attributions](#top)
+
+Aside from a few minor tweaks, the common-utils feature originally comes from:
+
+[Development Container Features](https://github.com/devcontainers/features)<br />
+Copyright © Microsoft Corporation. All rights reserved.<br />
+Licensed under the MIT License
+
+> "We see much further, and reach much higher,<br>
+> only because we stand upon the shoulders of giants"
