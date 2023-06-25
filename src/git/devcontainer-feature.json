@@ -3,7 +3,7 @@
     "version": "1.0.0",
     "name": "Git Feature",
     "documentationURL": "https://github.com/ragsworks/devcontainer-features/tree/master/src/git",
-    "description": "Installs the latest version of Git.",
+    "description": "Installs the latest version of Git and required dependencies.",
     "options": {
         "version": {
             "type": "string",
