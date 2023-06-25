@@ -2,7 +2,7 @@
 
 <img height="196" src="https://raw.githubusercontent.com/Ragdata/media/master/project/ragsworks/logo/ragsworks-256.png" alt="Ragdata" />
 
-[Ragdata's DevContainer-Features v-1.0.0](https://github.com/ragsworks/devcontainer-features/releases/tag/v-1.0.0)
+[RagsWorks DevContainer-Features v-1.0.0](https://github.com/ragsworks/devcontainer-features/releases/tag/v-1.0.0)
 
 </h1>
 
