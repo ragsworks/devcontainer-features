@@ -24,4 +24,4 @@ jobs:
             statuses: write
             packages: write
 
-        uses: ragsworks/workflow-megalinter/.github/workflows/reusable-mega-linter.yml@master
+        uses: ragsworks/workflow-megalinter/.github/workflows/reusable-megalinter.yml@master
