@@ -12,7 +12,7 @@
             ],
             "default": "latest",
             "description": "Currently unused."
-        },
+        }
     },
     "entrypoint": "/usr/local/share/ssh-init.sh",
     "installsAfter": [
