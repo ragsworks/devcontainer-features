@@ -1,0 +1,21 @@
+{
+    "id": "sshd",
+    "version": "1.0.0",
+    "name": "SSH Server Feature",
+    "documentationURL": "https://github.com/ragsworks/devcontainer-features/tree/master/src/sshd",
+    "description": "Adds an SSH server into a container so that you can use an external terminal, sftp, or SSHFS client to interact with it.",
+    "options": {
+        "version": {
+            "type": "string",
+            "proposals": [
+                "latest"
+            ],
+            "default": "latest",
+            "description": "Currently unused."
+        },
+    },
+    "entrypoint": "/usr/local/share/ssh-init.sh",
+    "installsAfter": [
+        "ghcr.io/ragsworks/devcontainer-features/common-utils"
+    ]
+}
