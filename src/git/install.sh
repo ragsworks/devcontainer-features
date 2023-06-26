@@ -72,8 +72,7 @@ receive_gpg_keys() {
     fi
 }
 
-apt_get_update()
-{
+apt_get_update() {
     if [ "$(find /var/lib/apt/lists/* | wc -l)" = "0" ]; then
         echo "Running apt-get update..."
         apt-get update -y
