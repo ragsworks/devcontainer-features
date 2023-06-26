@@ -1,0 +1,25 @@
+# ==================================================================
+# MegaLinter - Manual
+# ==================================================================
+name: Lint Project
+
+on:
+
+    workflow_dispatch:
+
+concurrency:
+    group: ${{ github.ref }}-${{ github.workflow }}
+    cancel-in-progress: true
+
+jobs:
+
+    call-megalinter:
+
+        name: Call MegaLinter
+
+        permissions:
+            contents: read
+            statuses: write
+            packages: write
+
+        uses: ragsworks/workflow-megalinter/.github/workflows/reusable-mega-linter.yml@master
