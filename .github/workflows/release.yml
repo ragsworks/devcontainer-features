@@ -1,0 +1,22 @@
+# ==================================================================
+# ReleaseManager
+# ==================================================================
+name: Release Manager
+
+on:
+
+    workflow_dispatch:
+
+concurrency:
+    group: ${{ github.ref }}-${{ github.workflow }}
+    cancel-in-progress: true
+
+jobs:
+
+    release-manager:
+
+        name: Release Manager
+
+        permissions: { write-all }
+
+        uses: ragsworks/workflow-release/.github/workflows/reusable-release-manager.yml@master
