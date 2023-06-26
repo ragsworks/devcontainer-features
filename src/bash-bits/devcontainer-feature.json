@@ -1,0 +1,20 @@
+{
+    "id": "bash-bits",
+    "version": "1.0.0",
+    "name": "Bash-Bits Feature",
+    "documentationURL": "https://github.com/ragsworks/devcontainer-features/tree/master/src/bash-bits",
+    "description": "Installs the most essential Bash-Bits libraries to get you started.",
+    "options": {
+        "version": {
+            "type": "string",
+            "proposals": [
+                "latest"
+            ],
+            "default": "latest",
+            "description": "Currently unused."
+        },
+    },
+    "installsAfter": [
+        "ghcr.io/ragsworks/devcontainers-features/common-utils"
+    ]
+}
