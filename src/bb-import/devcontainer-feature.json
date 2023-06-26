@@ -1,0 +1,20 @@
+{
+    "id": "bb-import",
+    "version": "1.0.0",
+    "name": "BB-Import Feature",
+    "documentationURL": "https://github.com/ragsworks/devcontainer-features/tree/master/src/bb-import",
+    "description": "Installs the latest version of BB-Import.",
+    "options": {
+        "version": {
+            "type": "string",
+            "proposals": [
+                "latest"
+            ],
+            "default": "latest",
+            "description": "Currently unused."
+        },
+    },
+    "installsAfter": [
+        "ghcr.io/ragsworks/devcontainers-features/common-utils"
+    ]
+}
