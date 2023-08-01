@@ -1,5 +1,7 @@
 <h1 align="center">
 
+<img width="100%" src="https://raw.githubusercontent.com/Ragdata/media/master/banner/wip-banner.svg" />
+
 <img height="196" src="https://raw.githubusercontent.com/Ragdata/media/master/project/ragsworks/logo/ragsworks-256.png" alt="Ragdata" />
 
 [RagsWorks DevContainer-Features v-1.0.0](https://github.com/ragsworks/devcontainer-features/releases/tag/v-1.0.0)
