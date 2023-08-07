@@ -1,7 +1,5 @@
 <h1 align="center">
 
-<img width="100%" src="https://raw.githubusercontent.com/Ragdata/media/master/banner/wip-banner.svg" />
-
 <img height="196" src="https://raw.githubusercontent.com/Ragdata/media/master/project/ragsworks/logo/ragsworks-256.png" alt="Ragdata" />
 
 [RagsWorks DevContainer-Features v-0.1.0](https://github.com/ragsworks/devcontainer-features/releases/tag/v-0.1.0)
@@ -72,7 +70,6 @@ If you like this repo, please give it a ⭐ (it really does help)
 > The DevContainers in this repository confirm to the <a href="https://containers.dev/" target="_blank">Official Development Containers Specification</a> (see <a href="https://github.com/devcontainers" target="_blank">GitHub</a>)
 
 
-
 ### [Branch Reliability](#toc)
 
 The Branch Reliability Table is a way for you to determine how close to the bleeding edge you're comfortable getting.
@@ -90,8 +87,7 @@ If you're contributing code to the project, you'll want 🔴
 
 ## ❓ [What's Included?](#toc)
 
-- ✅ [DevContainer Features](src)
-- ✅ [DevContainer Feature Tests](test)
+
 
 [`^ Top`](#toc)
 
@@ -126,33 +122,38 @@ npm install -g @devcontainers/cli
 
 [`^ Top`](#toc)
 
+## 📛 [Badges](#toc)
+
+#### COMING SOON
+
+[`^ Top`](#toc)
+
 ## 💪 [Available Support](#toc)
 
 ### 3rd Party Resources
 
-- ✅ [Official DevContainers Spec](https://containers.dev)
-  - ✅ [devcontainers.json Reference](https://containers.dev/implementors/json_reference/)
-- ✅ [Jetpack.io](https://www.jetpack.io/)
+- [Official DevContainers Spec](https://containers.dev)
+  - [devcontainers.json Reference](https://containers.dev/implementors/json_reference/)
+- [Jetpack.io](https://www.jetpack.io/)
 
 ### Project Resources
 
-- ✅ [Issues Register](https://github.com/ragsworks/devcontainer-features/issues)
-- ✅ [Project Website](https://ragsworks.github.io/devcontainer-features)
+- [Issues Register](https://github.com/ragsworks/devcontainer-features/issues)
+- [Project Website](https://ragsworks.github.io/devcontainer-features)
 
-<details><summary><h3>Community Resources</h3></summary>
+### Community Resources
 
 - [**The RedEyed Community Discord Server**](https://discord.gg/s6gZZUc67y)
 
 
 - [Community Support Document](https://github.com/ragsworks/.github/blob/master/.github/SUPPORT.md)
 - [Community Code of Conduct](https://github.com/ragsworks/.github/blob/master/.github/CODE_OF_CONDUCT.md)
+- [Community Governance Policy](https://github.com/ragsworks/.github/blob/master/.github/GOVERNANCE.md)
 - [Community Standards](https://github.com/ragsworks/devcontainer-features/community)
 - [Security Policy](https://github.com/ragsworks/devcontainer-features/security/policy)
 	- [Security Overview](https://github.com/ragsworks/devcontainer-features/security)
 	- [Security Advisories](https://github.com/ragsworks/devcontainer-features/security/advisories)
 	- [Dependabot Alerts](https://github.com/ragsworks/devcontainer-features/security/dependabot)
-
-</details>
 
 [`^ Top`](#toc)
 
@@ -191,11 +192,11 @@ npm install -g @devcontainers/cli
 
 ### [Join me & the RedEyed Community!](https://discord.gg/s6gZZUc67y)
 
-<a href="https://twitter.com/intent/follow?screen_name=RagdataAU" target="_blank"><img alt="Twitter" src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=Twitter&logoColor=white" /></a>
-<a href="https://www.reddit.com/r/RedeyedSoftware/" target="_blank"><img alt="Reddit" src="https://img.shields.io/badge/Reddit-FF4500?style=for-the-badge&logo=Reddit&logoColor=white" /></a>
-<a href="https://dev.to/ragdata" target="_blank"><img alt="Dev.to" src="https://img.shields.io/badge/dev.to-373737?style=for-the-badge&logo=dev.to&logoColor=white" /></a>
-<a href="https://ragdata.substack.com/" target="_blank"><img alt="SubStack" src="https://img.shields.io/badge/Substack-FF6719?style=for-the-badge&logo=Substack&logoColor=white" /></a>
-<a href="https://www.facebook.com/RedEyedSoftware/" target="_blank"><img alt="Facebook" src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=Facebook&logoColor=white" /></a>
+<a href="https://www.facebook.com/RedeyedAU/" target="_blank"><img alt="Facebook" src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=Facebook&logoColor=white" /></a>
+<a href="https://redeyedau.substack.com/" target="_blank"><img alt="SubStack" src="https://img.shields.io/badge/Substack-FF6719?style=for-the-badge&logo=Substack&logoColor=white" /></a>
+<a href="https://dev.to/redeyed-au" target="_blank"><img alt="Dev.to" src="https://img.shields.io/badge/dev.to-373737?style=for-the-badge&logo=dev.to&logoColor=white" /></a>
+<a href="https://www.reddit.com/r/RedeyedAU/" target="_blank"><img alt="Reddit" src="https://img.shields.io/badge/Reddit-FF4500?style=for-the-badge&logo=Reddit&logoColor=white" /></a>
+<a href="https://twitter.com/intent/follow?screen_name=RedeyedAU" target="_blank"><img alt="Twitter" src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=Twitter&logoColor=white" /></a>
 
 [![Discord](https://img.shields.io/discord/1067204348251230298?labelColor=5865F2&label=RedEyed%20Software%20&logo=discord&logoColor=white&style=for-the-badge)](https://discord.gg/s6gZZUc67y)
 
@@ -229,28 +230,28 @@ It's not just contributions of code that I'm looking for.  If you have any ideas
 
 This project incorporates ideas and / or code crafted by the following talented individuals:
 
-* [**devcontainers/spec**](https://github.com/devcontainers/spec)
-	Copyright © Microsoft Corporation
+* [**devcontainers/spec**](https://github.com/devcontainers/spec)<br />
+	Copyright © Microsoft Corporation<br />
 	MIT Licensed
 
 
-* [**devcontainers/action**](https://github.com/devcontainers/action)
-	Copyright © 2022 Microsoft Corporation
+* [**devcontainers/action**](https://github.com/devcontainers/action)<br />
+	Copyright © 2022 Microsoft Corporation<br />
 	MIT Licensed
 
 
-* [**devcontainers/ci**](https://github.com/devcontainers/ci)
-	Copyright © Microsoft Corporation
+* [**devcontainers/ci**](https://github.com/devcontainers/ci)<br />
+	Copyright © Microsoft Corporation<br />
 	MIT Licensed
 
 
-* [**devcontainers/features**](https://github.com/devcontainers/features)
-	Copyright © Microsoft Corporation
+* [**devcontainers/features**](https://github.com/devcontainers/features)<br />
+	Copyright © Microsoft Corporation<br />
 	MIT Licensed
 
 
-* [**devcontainers/feature-starter**](https://github.com/devcontainers/feature-starter)
-	Copyright © Microsoft Corporation
+* [**devcontainers/feature-starter**](https://github.com/devcontainers/feature-starter)<br />
+	Copyright © Microsoft Corporation<br />
 	MIT Licensed
 
 
@@ -276,9 +277,16 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 ## 📖 [Resources](#toc)
 
 ### Attributed Projects
-
+- https://github.com/devcontainers/spec
+- https://github.com/devcontainers/action
+- https://github.com/devcontainers/ci
+- https://github.com/devcontainers/features
+- https://github.com/devcontainers/feature-starter
 
 ### Relevant Resources
+- [Official DevContainers Spec](https://containers.dev)
+	- [devcontainers.json Reference](https://containers.dev/implementors/json_reference/)
+- [Jetpack.io](https://www.jetpack.io/)
 
 
 [`^ Top`](#toc)
