@@ -277,11 +277,11 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 ## 📖 [Resources](#toc)
 
 ### Attributed Projects
-- https://github.com/devcontainers/spec
-- https://github.com/devcontainers/action
-- https://github.com/devcontainers/ci
-- https://github.com/devcontainers/features
-- https://github.com/devcontainers/feature-starter
+- [**devcontainers/spec**](https://github.com/devcontainers/spec)
+- [**devcontainers/action**](https://github.com/devcontainers/action)
+- [**devcontainers/ci**](https://github.com/devcontainers/ci)
+- [**devcontainers/features**](https://github.com/devcontainers/features)
+- [**devcontainers/feature-starter**](https://github.com/devcontainers/feature-starter)
 
 ### Relevant Resources
 - [Official DevContainers Spec](https://containers.dev)
